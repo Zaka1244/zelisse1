@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('images/background.png') no-repeat center center fixed;
+  background-size: contain;
+  background-color: #f8f8f8; /* fallback background */
+  color: #333;
+  }
+  
+  .overlay {
+    background-color: whitesmoke;
+    padding: 2rem;
+    max-width: 500px;
+    margin: 2rem auto;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  }
+  
+  .logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 150px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #C2185B;
+  }
+  
+  .product-selector {
+    text-align: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 20px;
+  }
+  
+  .product-item {
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .product-item img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+  }
+  
+  .product-item:hover img {
+    transform: scale(1.05);
+  }
+  
+  .product-item.selected img {
+    border: 3px solid #18a0c2;
+  }
+  
+  label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  .total-box {
+    margin-top: 1rem;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px dashed #C2185B;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  button {
+    background-color: #C2185B;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  button:hover {
+    background-color: #a3154b;
+  }
+  
+  .thankyou-message {
+    display: none;
+    margin-top: 1.5rem;
+    padding: 15px;
+    background-color: #fff0f5;
+    color: #C2185B;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @media (max-width: 768px) {
+    body {
+      background-attachment: scroll; /* improves mobile performance */
+    }
+  }
+  
